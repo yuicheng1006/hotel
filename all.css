@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/170724-7_07.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.logo {
+    background-image: url("img/home_icon/logo_white.svg");
+    background-size: cover;
+    background-position: center;
+    width: 148px;
+    height: 148px;
+    margin-top: 47px;
+    margin-left: 54px;
+}
+
+.room {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 54px;
+    margin-top: 392px;
+}
+
+.room_date {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.date {
+    font-family: NotoSansCJKtc-DemiLight;
+    font-size: 66px;
+    color: #ffffff;
+    padding: 2px;
+}
+
+.date_shawdow {
+    width: 86px;
+    height: 19px;
+    position: absolute;
+    bottom: -1px;
+    background-size: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(45deg,
+            rgba(255, 255, 255, 1) 10%,
+            transparent 5%,
+            transparent 50%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 60%,
+            transparent 50%,
+            transparent);
+}
+
+.roomName {
+    white-space: nowrap;
+    font-family: NotoSansCJKtc-DemiLight;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 2.51px;
+    margin-top: 8px;
+}
+
+.content {
+    height: 360px;
+    width: 297px;
+    background-color: #ffffff;
+    margin-top: 48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.list li {
+    font-family: NotoSansCJKtc-Light;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1.46px;
+    padding: 37px 175px 0px 37px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.list li::before {
+    content: "";
+    background-color: black;
+    width: 23px;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    top: 85%;
+    opacity: 0;
+}
+
+.list li:hover::before {
+    opacity: 1;
+}
+
+.list_shawdow {
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    width: 281px;
+    height: 20px;
+    background-size: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(45deg,
+            rgba(255, 255, 255, 1) 10%,
+            transparent 5%,
+            transparent 50%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 60%,
+            transparent 50%,
+            transparent);
+}
+
+.connection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 34px;
+    margin-top: 170px;
+}
+
+.whitIcon {
+    display: inline;
+
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contentIcon {
+    margin-top: 33px;
+}
+
+.contentIcon li {
+    padding-top: 16px;
+    display: flex;
+}
+
+.contentIcon span {
+    font-family: NotoSansCJKtc-DemiLight;
+    font-size: 14px;
+    color: #ffffff;
+    padding-left: 11px;
+    padding-top: 3px;
+}
