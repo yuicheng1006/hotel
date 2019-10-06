@@ -35,6 +35,7 @@ function backgdImg(e) {
     let wrap = document.querySelector('.wrap');
     let date = document.querySelector('.date');
     let roomName = document.querySelector('.roomName');
+    let shawdow = document.querySelector('.date_shawdow');
     let liName = e.target.innerHTML;
 
     for (var i = 0; i < roomAry.items.length; i++) {
@@ -44,9 +45,8 @@ function backgdImg(e) {
             date.innerHTML = "0" + (1 + i);
             roomName.innerHTML = `${roomAry.items[i].name}`;
         }
-
     }
-
+    shawdow.style.display = "block";
 
 
 }
