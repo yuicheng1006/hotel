@@ -137,6 +137,12 @@ table {
 }
 
 /* ------------------------------index_1-------------------------- */
+* {
+    outline: 1px dotted red;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 .wrap {
     width: 100vw;
@@ -179,7 +185,7 @@ table {
 }
 
 .date {
-    font-family: NotoSansCJKtc-DemiLight;
+    font-family: "Noto Sans TC";
     font-size: 66px;
     color: #ffffff;
     padding: 2px;
@@ -205,7 +211,7 @@ table {
 
 .roomName {
     white-space: nowrap;
-    font-family: NotoSansCJKtc-DemiLight;
+    font-family: "Noto Sans TC";
     font-size: 24px;
     color: #ffffff;
     letter-spacing: 2.51px;
@@ -223,7 +229,7 @@ table {
 }
 
 .list li {
-    font-family: NotoSansCJKtc-Light;
+    font-family: "Noto Sans TC";
     font-size: 14px;
     color: #000000;
     letter-spacing: 1.46px;
@@ -291,7 +297,7 @@ table {
 }
 
 .contentIcon span {
-    font-family: NotoSansCJKtc-DemiLight;
+    font-family: "Noto Sans TC";
     font-size: 14px;
     color: #ffffff;
     padding-left: 11px;
@@ -321,7 +327,7 @@ table {
     background-position: center bottom;
     display: flex;
     flex-direction: column;
-    transition: 6s ease;
+    /* transition: 6s ease; */
 }
 
 .coverSmall {
@@ -470,4 +476,298 @@ table {
 
 .holiday {
     color: #6d7278;
+}
+
+/* ------------------------------index_3-------------------------- */
+
+.wrap_3 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigBg {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.leftBg {
+    background-image: url('https://images.unsplash.com/photo-1515511856280-7b23f68d2996?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80');
+    background-size: cover;
+    background-position: center bottom;
+    width: 70%;
+    height: 596px;
+    position: relative;
+
+}
+
+.blackLogo {
+    position: absolute;
+    top: 32px;
+    left: 49px;
+    font-family: "Noto Sans TC";
+}
+
+.rightBg {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upBg {
+    background-image: url('https://images.unsplash.com/photo-1526880792616-4217886b9dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 298px
+}
+
+.downBg {
+    background-image: url('https://images.unsplash.com/photo-1551776235-dde6d482980b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 298px
+}
+
+.downInfo {
+    width: 100%;
+    display: flex;
+
+}
+
+.leftSide {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.roomsId {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.roomsName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.roomsName h2 {
+    font-family: "Noto Sans TC";
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 3.76px;
+    margin-top: 47px;
+    margin-left: 62px;
+}
+
+.roomInfoList {
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1.46px;
+    line-height: 31px;
+    margin-top: 41px;
+    margin-left: 62px;
+}
+
+.roomsIntro {
+    margin-top: 30px;
+    margin-left: 62px;
+    font-family: "Noto Sans TC";
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+}
+
+.priceDay {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.priceDay h3 {
+    font-family: "Noto Sans TC";
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 3.13px;
+    line-height: 27px;
+    margin-top: 45px;
+}
+
+.priceDay {
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    color: #6D7278;
+    letter-spacing: 1.46px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.priceDay h4 {
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1.67px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+
+.slashContent {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 62px;
+}
+
+.slash {
+    height: 15px;
+    border: 1px solid #000;
+    transform: rotate(-45deg);
+    top: 0;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    margin-left: 15px;
+}
+
+.checkInOut {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 62px;
+    margin-top: 30px;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkInOut p {
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1.46px;
+}
+
+.checkTime {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkInOut span {
+    font-family: "Noto Sans TC";
+    font-size: 21px;
+    color: #000000;
+    letter-spacing: 2.19px;
+    margin-top: 10px;
+}
+
+
+
+.roomsInsta {
+    background-color: #F0F0F0;
+    margin-top: 50px;
+    margin-left: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+}
+
+.roomsInsta li {
+    width: 33.33%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.fas {
+    color: #000;
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+.roomsInsta span {
+    font-family: "Noto Sans TC";
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1.25px;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.fas.bar {
+    margin-left: 25px;
+}
+
+.fas.room_service {
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.rightSide {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    width: 75%;
+    height: 390px;
+    margin-top: 45px;
+    margin-left: 50px;
+    background: #F7F7F7;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    border: none;
+    width: 118px;
+    height: 53px;
+    margin-top: 26px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #575757;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1.67px;
+    text-align: center;
+    z-index: 1;
+}
+
+.btn_bg {
+    position: relative;
+
+
+}
+
+.btn_shadow {
+    position: absolute;
+    width: 118px;
+    height: 56px;
+    background-size: 5px 5px;
+    background-color: #000;
+    background-image: linear-gradient(45deg,
+            rgba(255, 255, 255, 1) 30%,
+            transparent 10%,
+            transparent 50%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 80%,
+            transparent 80%,
+            transparent);
+    top: -50px;
+    left: 55px;
+    z-index: 0;
 }
