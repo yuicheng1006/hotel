@@ -14,22 +14,37 @@ xhr.onload = function () {
     roomAry = JSON.parse(xhr.responseText);
     roomNo();
     ul.addEventListener('mouseover', backgdImg);
+    ul.addEventListener('click', setId);
 
 }
+var ul = document.querySelector('.list');
+
+//-----------把ID存進去localstroage---------
+
+function setId(e) {
+    let roomId = e.target.dataset.id;
+    localStorage.setItem('id', roomId);
+    window.location = 'index_3.html'; //原視窗打開
+    //window.open('index_3.html'); //另開一頁
+
+}
+
+
+
 //------房型---------
 
 function roomNo() {
     list = document.querySelector('.list');
     let str = "";
     for (let i = 0; i < roomAry.items.length; i++) {
-        str += `<li class="roomNum">${roomAry.items[i].name}</li>`
+        str += `<li data-id="${roomAry.items[i].id}" class="roomNum">${roomAry.items[i].name}</li>`
     }
     list.innerHTML = str;
 }
 
 
 //------背景------
-var ul = document.querySelector('.list');
+
 
 function backgdImg(e) {
     let wrap = document.querySelector('.wrap');
@@ -37,6 +52,7 @@ function backgdImg(e) {
     let roomName = document.querySelector('.roomName');
     let shawdow = document.querySelector('.date_shawdow');
     let liName = e.target.innerHTML;
+    //console.log(liName);
 
     for (var i = 0; i < roomAry.items.length; i++) {
         let aryName = roomAry.items[i].name;
@@ -47,6 +63,5 @@ function backgdImg(e) {
         }
     }
     shawdow.style.display = "block";
-
 
 }
