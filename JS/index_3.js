@@ -31,6 +31,12 @@ function backBg() {
     downBg.style.backgroundImage = `url('${roomAry.room[0].imageUrl[2]}')`
 }
 
+//--------點擊 logo 回首頁--------
+
+let blackLogo = document.querySelector('.blackLogo');
+blackLogo.addEventListener('click', function () {
+    window.location = 'index_1.html';
+})
 
 
 //---------資訊字串--------
@@ -199,7 +205,24 @@ function installation() {
 
     rightArrow.addEventListener('click', preDay);
 
+    //-------點擊預約時段出現預約畫面---------
 
+    let bookWrap = document.querySelector('.bookWrap');
+    let btn = document.querySelector('.btn');
+    btn.addEventListener('click', function () {
+        bookWrap.style.display = "flex";
+
+    })
+
+    //-------點擊取消或是外面黑色部分取消---------
+    let resetBtn = document.querySelector('.resetBtn');
+    resetBtn.addEventListener('click', function () {
+        bookWrap.style.display = "none";
+
+    })
+    bookWrap.addEventListener('click', function () {
+        bookWrap.style.display = "none";
+    })
     // let li = document.querySelectorAll('.roomsInsta li');
 
     // for (let i = 0; i < li.length; i++) {

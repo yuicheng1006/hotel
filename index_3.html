@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/all.css">
 </head>
 
@@ -150,8 +151,56 @@
                     <div class="btn_shadow"></div>
                 </div>
             </div>
+
         </div>
-        <script src="JS/index_3.js"></script>
+        <div class="bookWrap">
+            <div class="bookRoom">
+                <h2>預約時段</h2>
+                <span>\ \ \</span>
+                <div class="bookInfo">
+                    <div class="bookItem">
+                        <p>姓名</p>
+                        <input type="text" class="bookText">
+                    </div>
+                    <div class="bookItem">
+                        <p>電話</p>
+                        <input type="text" class="bookText">
+                    </div>
+                    <div class="bookItem">
+                        <p>預約起迄</p>
+                        <div class="bookTimebox">
+                            <input type="date" class="bookTime bookStart">
+                            <span>~</span>
+                            <input type="date" class="bookTime bookEnd">
+                        </div>
+                    </div>
+                </div>
+                <div class="dayBox">
+                    <div class="nightBox">
+                        <div class="dayNight">
+                            <span>平日時段</span>
+                            <span>夜</span>
+                        </div>
+                        <div class="dayNight">
+                            <span>平日時段</span>
+                            <span>夜</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="totalPrice">
+                    <span>=</span>
+                    <span>NT.</span>
+                </div>
+                <div class="btnBox">
+                    <input type="reset" value="取消" class="bookBtn resetBtn">
+                    <input type="submit" value="確定預約" class="bookBtn checkBtn">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/index_3.js"></script>
 </body>
 
 </html>

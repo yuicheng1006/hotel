@@ -111,6 +111,13 @@ xhr.onload = function () {
         }
     }
 
+    //--------至第一個網頁-------
+
+    let logo = document.querySelector('.logo');
+    logo.addEventListener('click', function () {
+        window.location = 'index_1.html';
+    })
+
     // function roomsImage() {
     //     let roomInfo = document.querySelectorAll('.roomInfo');
     //     for (let i = 0; i < roomInfo.length; i++) {

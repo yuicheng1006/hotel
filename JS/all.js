@@ -65,3 +65,9 @@ function backgdImg(e) {
     shawdow.style.display = "block";
 
 }
+//--------至第二個網頁-------
+
+let logo = document.querySelector('.logo');
+logo.addEventListener('click', function () {
+    window.location = 'index_2.html';
+})
