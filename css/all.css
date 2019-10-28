@@ -750,6 +750,7 @@ table {
     letter-spacing: 1.67px;
     text-align: center;
     z-index: 1;
+    cursor: pointer;
 }
 
 .btn_bg {
@@ -787,7 +788,7 @@ table {
     height: 18px;
 }
 
-.year span {
+.calendar_yearmonth span {
     font-family: "Noto Sans TC";
     font-size: 18px;
     color: #000000;
@@ -827,5 +828,38 @@ table {
     font-size: 14px;
     color: #6D7278;
     letter-spacing: 1.46px;
-    padding-bottom: 30px;
+    padding: 15px;
+}
+
+.pastDay span {
+    color: red !important;
+}
+
+.today {
+    position: relative;
+}
+
+.today::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    opacity: 0.5;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: 5px 5px;
+    background-color: #000;
+    background-image: linear-gradient(45deg,
+            rgba(255, 255, 255, 1) 30%,
+            transparent 10%,
+            transparent 50%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 80%,
+            transparent 80%,
+            transparent);
+}
+
+.pastDay {
+    color: #C9CCD0 !important;
 }
