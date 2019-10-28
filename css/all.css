@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
-
-
-
 /* * {
     outline: 1px dotted red;
     -webkit-box-sizing: border-box;
@@ -12,885 +9,869 @@
 /* ------------------------------index_1-------------------------- */
 
 .wrap {
-    width: 100vw;
-    height: 100vh;
-    width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1551776235-dde6d482980b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1551776235-dde6d482980b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .logo {
-    width: 148px;
-    height: 148px;
-    margin-top: 47px;
-    margin-left: 54px;
-    cursor: pointer;
+  width: 148px;
+  height: 148px;
+  margin-top: 47px;
+  margin-left: 54px;
+  cursor: pointer;
 }
 
 .room {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 54px;
-    margin-top: 392px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 54px;
+  margin-top: 392px;
 }
 
 .room_date {
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .date {
-    font-family: "Noto Sans TC";
-    font-size: 66px;
-    color: #ffffff;
-    padding: 2px;
+  font-family: "Noto Sans TC";
+  font-size: 66px;
+  color: #ffffff;
+  padding: 2px;
 }
 
 .date_shawdow {
-    display: none;
-    width: 86px;
-    height: 19px;
-    position: absolute;
-    bottom: -1px;
-    background-size: 10px 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    background-image: linear-gradient(45deg,
-            rgba(255, 255, 255, 1) 10%,
-            transparent 5%,
-            transparent 50%,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(255, 255, 255, 1) 60%,
-            transparent 50%,
-            transparent);
+  display: none;
+  width: 86px;
+  height: 19px;
+  position: absolute;
+  bottom: -1px;
+  background-size: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 10%,
+    transparent 5%,
+    transparent 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 60%,
+    transparent 50%,
+    transparent
+  );
 }
 
 .roomName {
-    white-space: nowrap;
-    font-family: "Noto Sans TC";
-    font-size: 24px;
-    color: #ffffff;
-    letter-spacing: 2.51px;
-    margin-top: 8px;
+  white-space: nowrap;
+  font-family: "Noto Sans TC";
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 2.51px;
+  margin-top: 8px;
 }
 
 .content {
-    height: 360px;
-    width: 297px;
-    background-color: #ffffff;
-    margin-top: 48px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  height: 360px;
+  width: 297px;
+  background-color: #ffffff;
+  margin-top: 48px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .list li {
-    font-family: "Noto Sans TC";
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 1.46px;
-    padding: 37px 175px 0px 37px;
-    white-space: nowrap;
-    position: relative;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 1.46px;
+  padding: 37px 175px 0px 37px;
+  white-space: nowrap;
+  position: relative;
 }
 
 .list li::before {
-    content: "";
-    background-color: black;
-    width: 23px;
-    height: 1px;
-    position: absolute;
-    left: 0px;
-    top: 85%;
-    opacity: 0;
+  content: "";
+  background-color: black;
+  width: 23px;
+  height: 1px;
+  position: absolute;
+  left: 0px;
+  top: 85%;
+  opacity: 0;
 }
 
 .list li:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .list_shawdow {
-    position: absolute;
-    right: 0px;
-    bottom: -20px;
-    width: 281px;
-    height: 20px;
-    background-size: 10px 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    background-image: linear-gradient(45deg,
-            rgba(255, 255, 255, 1) 10%,
-            transparent 5%,
-            transparent 50%,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(255, 255, 255, 1) 60%,
-            transparent 50%,
-            transparent);
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+  width: 281px;
+  height: 20px;
+  background-size: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 10%,
+    transparent 5%,
+    transparent 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 60%,
+    transparent 50%,
+    transparent
+  );
 }
 
 .connection {
-    display: flex;
-    flex-direction: column;
-    margin-left: 34px;
-    margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+  margin-top: 170px;
 }
 
 .whitIcon {
-    display: inline;
+  display: inline;
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .contentIcon {
-    margin-top: 33px;
+  margin-top: 33px;
 }
 
 .contentIcon li {
-    padding-top: 16px;
-    display: flex;
+  padding-top: 16px;
+  display: flex;
 }
 
 .contentIcon span {
-    font-family: "Noto Sans TC";
-    font-size: 14px;
-    color: #ffffff;
-    padding-left: 11px;
-    padding-top: 3px;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 11px;
+  padding-top: 3px;
 }
 
 /* ------------------------------index_2-------------------------- */
 
 .halfBkg {
-    background-image: url("");
-    flex-direction: column;
+  background-image: url("");
+  flex-direction: column;
 }
 
 .coverSlide {
-    width: 100%;
-    height: 660px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 660px;
+  display: flex;
+  flex-direction: column;
 }
 
 .coverflow {
-    width: 100%;
-    height: 660px;
-    background-image: url('');
-    background-color: #DCDCDCDC;
-    background-size: 130%;
-    background-position: center bottom;
-    display: flex;
-    flex-direction: column;
-    /* transition: 6s ease; */
+  width: 100%;
+  height: 660px;
+  background-image: url("");
+  background-color: #dcdcdcdc;
+  background-size: 130%;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  /* transition: 6s ease; */
 }
 
 .coverSmall {
-    animation-name: bgZoomIn;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+  animation-name: bgZoomIn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes bgZoomIn {
-    0% {
-        background-size: 130%;
-    }
+  0% {
+    background-size: 130%;
+  }
 
-    100% {
-        background-size: 100%;
-    }
+  100% {
+    background-size: 100%;
+  }
 }
 
-
 .logoM {
-    margin-left: 655px;
-    margin-top: 150px;
+  margin-left: 655px;
+  margin-top: 150px;
 }
 
 .connect {
-    width: 33%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 80px;
-    margin-left: 580px;
-    margin-bottom: 250px;
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 580px;
+  margin-bottom: 250px;
 }
 
 .community {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .line {
-    border-left: #ffffff 1px solid;
-    height: 90px;
+  border-left: #ffffff 1px solid;
+  height: 90px;
 }
 
 .infoIcon {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 
 .roomImg {
-    width: 80%;
-    margin-left: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 165px;
-    margin-top: -150px;
+  width: 80%;
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 165px;
+  margin-top: -150px;
 }
 
 .roomInfo {
-    /* background-image: url("https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); */
-    background-size: 175%;
-    background-position: center bottom;
-    width: 30%;
-    height: 400px;
-    box-shadow: 2px 2px 9px 0 rgba(0, 0, 0, 0.18);
-    display: flex;
-    align-items: flex-end;
-    margin-top: 100px;
-    position: relative;
-    overflow: hidden;
-    transition: 0.5s ease;
+  /* background-image: url("https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); */
+  background-size: 175%;
+  background-position: center bottom;
+  width: 30%;
+  height: 400px;
+  box-shadow: 2px 2px 9px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: flex-end;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
 }
 
 .infoHover {
-    width: 100%;
-    background: #f7f7f7;
-    position: relative;
-    bottom: -15%;
-    transition: 0.5s ease;
+  width: 100%;
+  background: #f7f7f7;
+  position: relative;
+  bottom: -15%;
+  transition: 0.5s ease;
 }
 
 .infoHover h3 {
-    font-family: "Noto Sans TC";
-    color: #000000;
-    letter-spacing: 1.46px;
-    margin: 23px 30px 0px;
+  font-family: "Noto Sans TC";
+  color: #000000;
+  letter-spacing: 1.46px;
+  margin: 23px 30px 0px;
 }
 
 .infoHover p {
-    font-size: 14px;
-    color: #6d7278;
-    letter-spacing: 2.19px;
-    line-height: 31px;
-    padding-left: 30px;
-    margin-bottom: 23px;
-    opacity: 0;
-
+  font-size: 14px;
+  color: #6d7278;
+  letter-spacing: 2.19px;
+  line-height: 31px;
+  padding-left: 30px;
+  margin-bottom: 23px;
+  opacity: 0;
 }
 
 .hoverInfo {
-    display: flex;
-    align-items: baseline;
-    font-family: "Noto Sans TC";
-    font-size: 12px;
-    padding: 0px;
-    opacity: 0;
-    /* display: none; */
+  display: flex;
+  align-items: baseline;
+  font-family: "Noto Sans TC";
+  font-size: 12px;
+  padding: 0px;
+  opacity: 0;
+  /* display: none; */
 }
 
 .roomInfo:hover {
-    background-size: 190%;
-    transition: 0.5s ease;
+  background-size: 190%;
+  transition: 0.5s ease;
 }
 
 .roomInfo:hover .hoverInfo,
 .roomInfo:hover .infoHover p {
-    opacity: 1;
-
+  opacity: 1;
 }
 
 .roomInfo:hover .infoHover {
-    bottom: 0;
-
+  bottom: 0;
 }
 
 .hoverInfo p {
-    font-size: 21px;
-    color: #000000;
-    letter-spacing: 2.19px;
-    line-height: 31px;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 2.19px;
+  line-height: 31px;
 }
 
 .hoverInfo span {
-    font-size: 14px;
-    padding-left: 10px;
-
+  font-size: 14px;
+  padding-left: 10px;
 }
 
 .hoverInfo span.price {
-    font-size: 14px;
-    padding-left: 70px;
-    color: #6d7278;
-    padding-top: 10px;
-    padding-bottom: 20px;
+  font-size: 14px;
+  padding-left: 70px;
+  color: #6d7278;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .holiday {
-    color: #6d7278;
+  color: #6d7278;
 }
 
 /* ------------------------------index_3-------------------------- */
 
 .wrap_3 {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .bigBg {
-
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .leftBg {
-    background-image: url('');
-    background-size: cover;
-    background-position: center bottom;
-    width: 70%;
-    height: 596px;
-    position: relative;
-
+  background-image: url("");
+  background-size: cover;
+  background-position: center bottom;
+  width: 70%;
+  height: 596px;
+  position: relative;
 }
 
 .blackLogo {
-    position: absolute;
-    top: 32px;
-    left: 49px;
-    font-family: "Noto Sans TC";
-    cursor: pointer;
+  position: absolute;
+  top: 32px;
+  left: 49px;
+  font-family: "Noto Sans TC";
+  cursor: pointer;
 }
 
 .rightBg {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .upBg {
-    background-image: url('');
-    background-size: cover;
-    background-position: center bottom;
-    width: 100%;
-    height: 298px
+  background-image: url("");
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  height: 298px;
 }
 
 .downBg {
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 298px
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 298px;
 }
 
 .downInfo {
-    width: 100%;
-    display: flex;
-
+  width: 100%;
+  display: flex;
 }
 
 .leftSide {
-    width: 65%;
-    display: flex;
-    justify-content: space-around;
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .roomsId {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .roomsName {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .roomsName h2 {
-    font-family: "Noto Sans TC";
-    font-size: 36px;
-    color: #000000;
-    letter-spacing: 3.76px;
-    margin-top: 47px;
-    margin-left: 62px;
+  font-family: "Noto Sans TC";
+  font-size: 36px;
+  color: #000000;
+  letter-spacing: 3.76px;
+  margin-top: 47px;
+  margin-left: 62px;
 }
 
 .roomInfoList {
-    font-family: "Noto Sans TC";
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 1.46px;
-    line-height: 31px;
-    margin-top: 41px;
-    margin-left: 62px;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 1.46px;
+  line-height: 31px;
+  margin-top: 41px;
+  margin-left: 62px;
 }
 
 .roomsIntro {
-    margin-top: 30px;
-    margin-left: 62px;
-    font-family: "Noto Sans TC";
-    font-size: 12px;
-    color: #000000;
-    letter-spacing: 1.25px;
-    line-height: 20px;
+  margin-top: 30px;
+  margin-left: 62px;
+  font-family: "Noto Sans TC";
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 1.25px;
+  line-height: 20px;
 }
 
 .priceDay {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .priceDay h3 {
-    font-family: "Noto Sans TC";
-    font-size: 30px;
-    color: #000000;
-    letter-spacing: 3.13px;
-    line-height: 27px;
-    margin-top: 45px;
+  font-family: "Noto Sans TC";
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 3.13px;
+  line-height: 27px;
+  margin-top: 45px;
 }
 
 .priceDay {
-    font-family: "Noto Sans TC";
-    font-size: 14px;
-    color: #6D7278;
-    letter-spacing: 1.46px;
-    line-height: 27px;
-    margin-top: 10px;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  color: #6d7278;
+  letter-spacing: 1.46px;
+  line-height: 27px;
+  margin-top: 10px;
 }
 
 .priceDay h4 {
-    font-family: "Noto Sans TC";
-    font-size: 16px;
-    color: #000000;
-    letter-spacing: 1.67px;
-    line-height: 27px;
-    margin-top: 15px;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1.67px;
+  line-height: 27px;
+  margin-top: 15px;
 }
 
 .slashContent {
-    display: flex;
-    margin-top: 30px;
-    margin-left: 62px;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 62px;
 }
 
 .slash {
-    height: 15px;
-    border: 1px solid #000;
-    transform: rotate(-45deg);
-    top: 0;
-    border-bottom: none;
-    border-right: none;
-    border-top: none;
-    margin-left: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  transform: rotate(-45deg);
+  top: 0;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  margin-left: 15px;
 }
 
 .checkInOut {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 62px;
-    margin-top: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 62px;
+  margin-top: 30px;
 }
 
 .check {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkInOut p {
-    font-family: "Noto Sans TC";
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 1.46px;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 1.46px;
 }
 
 .checkTime {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .checkInOut span {
-    font-family: "Noto Sans TC";
-    font-size: 21px;
-    color: #000000;
-    letter-spacing: 2.19px;
-    margin-top: 10px;
+  font-family: "Noto Sans TC";
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 2.19px;
+  margin-top: 10px;
 }
 
-
-
 .roomsInsta {
-    background-color: #F0F0F0;
-    margin-top: 50px;
-    margin-left: 62px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 72px;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  margin-left: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
 }
 
 .roomsInsta li {
-    width: 33.33%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  width: 33.33%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .fas {
-    color: #000;
-    width: 20px;
-    height: 20px;
-    margin-top: 30px;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
 }
 
 .newFas {
-    color: #3A3A3A;
+  color: #3a3a3a;
 }
 
 .roomsInsta span {
-    font-family: "Noto Sans TC";
-    font-size: 12px;
-    color: #000000;
-    letter-spacing: 1.25px;
-    margin-top: 35px;
-    margin-left: 10px;
+  font-family: "Noto Sans TC";
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 1.25px;
+  margin-top: 35px;
+  margin-left: 10px;
 }
 
 .fas.Mini-Bar {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .fas.Room-Service {
-    margin-left: 60px;
-    margin-bottom: 30px;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 .rightSide {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
 }
 
 .calendar {
-    width: 75%;
-    margin-top: 45px;
-    margin-left: 50px;
-    background: #F7F7F7;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
+  width: 75%;
+  margin-top: 45px;
+  margin-left: 50px;
+  background: #f7f7f7;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
 }
 
 .btn {
-    border: none;
-    width: 118px;
-    height: 53px;
-    margin-top: 26px;
-    margin-left: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: #575757;
-    font-family: "Noto Sans TC";
-    font-size: 16px;
-    color: #FFFFFF;
-    letter-spacing: 1.67px;
-    text-align: center;
-    z-index: 1;
-    cursor: pointer;
+  border: none;
+  width: 118px;
+  height: 53px;
+  margin-top: 26px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #575757;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 1.67px;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .btn_bg {
-    position: relative;
+  position: relative;
 }
 
 .btn_shadow {
-    position: absolute;
-    width: 118px;
-    height: 56px;
-    background-size: 5px 5px;
-    background-color: #000;
-    background-image: linear-gradient(45deg,
-            rgba(255, 255, 255, 1) 30%,
-            transparent 10%,
-            transparent 50%,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(255, 255, 255, 1) 80%,
-            transparent 80%,
-            transparent);
-    top: -50px;
-    left: 55px;
-    z-index: 0;
+  position: absolute;
+  width: 118px;
+  height: 56px;
+  background-size: 5px 5px;
+  background-color: #000;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 30%,
+    transparent 10%,
+    transparent 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 80%,
+    transparent 80%,
+    transparent
+  );
+  top: -50px;
+  left: 55px;
+  z-index: 0;
 }
 
 .calendar_top {
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .arrow {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .calendar_yearmonth span {
-    font-family: "Noto Sans TC";
-    font-size: 18px;
-    color: #000000;
-    letter-spacing: 1.88px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 1.88px;
 }
 
 .calendar_day {
-    width: 85%;
-    margin-top: 20px;
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
+  width: 85%;
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
 }
 
 .calendar_day span {
-    font-family: "Noto Sans TC";
-    font-size: 18px;
-    color: #6D7278;
-    letter-spacing: 1.88px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  color: #6d7278;
+  letter-spacing: 1.88px;
 }
 
 .calendar_date {
-    width: 85%;
-    margin-top: 30px;
-    margin-bottom: 45px;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-
+  width: 85%;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
 }
 
 .calendar_date span {
-    width: 14.25%;
-    justify-content: center;
-    text-align: center;
-    font-family: "Noto Sans TC";
-    font-size: 14px;
-    color: #6D7278;
-    letter-spacing: 1.46px;
-    padding: 15px;
+  width: 14.25%;
+  justify-content: center;
+  text-align: center;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  color: #6d7278;
+  letter-spacing: 1.46px;
+  padding: 15px 0px;
 }
 
 .pastDay span {
-    color: red !important;
+  color: red !important;
 }
 
 .today {
-    position: relative;
+  position: relative;
 }
 
 .today::after {
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    opacity: 0.5;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-size: 5px 5px;
-    background-color: #000;
-    background-image: linear-gradient(45deg,
-            rgba(255, 255, 255, 1) 30%,
-            transparent 10%,
-            transparent 50%,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(255, 255, 255, 1) 80%,
-            transparent 80%,
-            transparent);
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0.5;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 5px 5px;
+  background-color: #000;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 30%,
+    transparent 10%,
+    transparent 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 80%,
+    transparent 80%,
+    transparent
+  );
 }
 
 .pastDay {
-    color: #C9CCD0 !important;
+  color: #c9ccd0 !important;
 }
 
 /* -------預定的頁面------- */
 
 .bookWrap {
-    width: 100vw;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    margin: auto;
-    position: absolute;
-    font-family: "Noto Sans TC";
-    position: fixed;
+  width: 100vw;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  margin: auto;
+  position: absolute;
+  font-family: "Noto Sans TC";
+  position: fixed;
 }
 
 .bookRoom {
-    width: 35%;
-    background-color: #ffffff;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-
+  width: 35%;
+  background-color: #ffffff;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
 }
 
 .bookRoom h2 {
-    font-size: 24px;
-    color: #000000;
-    letter-spacing: 2.51px;
-    margin-left: 42px;
-    margin-top: 27px;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 2.51px;
+  margin-left: 42px;
+  margin-top: 27px;
 }
 
 .bookRoom span {
-    margin-left: 42px;
-    margin-top: 15px;
+  margin-left: 42px;
+  margin-top: 15px;
 }
 
 .bookInfo {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 42px;
-    margin-top: 45px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 42px;
+  margin-top: 45px;
 }
 
 .bookItem {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .bookItem p {
-    width: 30%;
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 1.46px;
-    align-self: center;
+  width: 30%;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 1.46px;
+  align-self: center;
 }
 
 .bookText {
-    width: 70%;
-    border: 1px solid #C9C9C9;
-    border-radius: 5px;
-    padding: 9px;
+  width: 70%;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 9px;
 }
 
 .bookTimebox {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bookTime {
-    font-family: "Noto Sans TC";
-    border: 1px solid #C9C9C9;
-    border-radius: 5px;
-    padding: 6.5px;
-    width: 40%;
-    font-size: 12px;
-    color: #000000;
-
+  font-family: "Noto Sans TC";
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 6.5px;
+  width: 40%;
+  font-size: 12px;
+  color: #000000;
 }
 
 .bookItem .bookTimebox span {
-
-    margin: 0;
+  margin: 0;
 }
 
 .dayBox {
-    width: 100%;
-    margin-top: 30px;
-    background: #EDEDED;
-
-
+  width: 100%;
+  margin-top: 30px;
+  background: #ededed;
 }
 
 .nightBox {
-    width: 93%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0px;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
 }
 
 .dayNight {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .dayBox span {
-    font-size: 12px;
-    color: #6D7278;
-    letter-spacing: 1.25px;
-    text-align: right;
-    margin-top: 0px;
-    padding: 5px;
+  font-size: 12px;
+  color: #6d7278;
+  letter-spacing: 1.25px;
+  text-align: right;
+  margin-top: 0px;
+  padding: 5px;
 }
 
 .totalPrice {
-    font-size: 26px;
-    color: #FF5C5C;
-    letter-spacing: 2.72px;
-    text-align: right;
-    margin-right: 35px;
-    margin-top: 8px;
+  font-size: 26px;
+  color: #ff5c5c;
+  letter-spacing: 2.72px;
+  text-align: right;
+  margin-right: 35px;
+  margin-top: 8px;
 }
 
 .btnBox {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 42px 34px;
-
-
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 42px 34px;
 }
 
 .bookBtn {
-    width: 20%;
-    background: #D8D8D8;
-    padding: 10px;
-    font-size: 14px;
-    color: #6D7278;
-    letter-spacing: 1.46px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
+  width: 20%;
+  background: #d8d8d8;
+  padding: 10px;
+  font-size: 14px;
+  color: #6d7278;
+  letter-spacing: 1.46px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
 .bookBtn:hover {
-    background: #484848;
-    color: #ffffff;
+  background: #484848;
+  color: #ffffff;
 }
 
 .checkBtn {
-    width: 30%;
+  width: 30%;
 }
