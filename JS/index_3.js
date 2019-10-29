@@ -208,21 +208,28 @@ function installation() {
     //-------點擊預約時段出現預約畫面---------
 
     let bookWrap = document.querySelector('.bookWrap');
+    let bookRoom = document.querySelector('.bookRoom');
     let btn = document.querySelector('.btn');
     btn.addEventListener('click', function () {
         bookWrap.style.display = "flex";
-
+        bookRoom.style.display = "flex";
     })
 
     //-------點擊取消或是外面黑色部分取消---------
     let resetBtn = document.querySelector('.resetBtn');
     resetBtn.addEventListener('click', function () {
         bookWrap.style.display = "none";
-
+        bookRoom.style.display = "none";
     })
+
     bookWrap.addEventListener('click', function () {
         bookWrap.style.display = "none";
+        bookRoom.style.display = "none";
     })
+
+
+
+
     // let li = document.querySelectorAll('.roomsInsta li');
 
     // for (let i = 0; i < li.length; i++) {
