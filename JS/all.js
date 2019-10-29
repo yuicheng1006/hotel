@@ -50,7 +50,6 @@ function backgdImg(e) {
     let wrap = document.querySelector('.wrap');
     let date = document.querySelector('.date');
     let roomName = document.querySelector('.roomName');
-    let shawdow = document.querySelector('.date_shawdow');
     let liName = e.target.innerHTML;
     //console.log(liName);
 
@@ -62,7 +61,6 @@ function backgdImg(e) {
             roomName.innerHTML = `${roomAry.items[i].name}`;
         }
     }
-    shawdow.style.display = "block";
 
 }
 //--------至第二個網頁-------
